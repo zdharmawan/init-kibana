@@ -13,7 +13,7 @@ DESC="Kibana4"
 PROG="/etc/init.d/kibana"
 
 # Configure location of Kibana bin
-KIBANA_BIN=/home/kibana_user/kibana/current/bin
+KIBANA_BIN=/opt/kibana/current/bin
 
 # PID Info
 PID_FOLDER=/var/run/kibana/
@@ -23,7 +23,7 @@ PATH=/bin:/usr/bin:/sbin:/usr/sbin:$KIBANA_BIN
 DAEMON=$KIBANA_BIN/$NAME
 
 # Configure User to run daemon process
-DAEMON_USER=kibana_user
+DAEMON_USER=ec2-user
 # Configure logging location
 KIBANA_LOG=/var/log/kibana.log
 
